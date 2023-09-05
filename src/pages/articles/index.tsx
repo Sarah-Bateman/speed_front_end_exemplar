@@ -1,4 +1,4 @@
-import { GetStaticProps, NextPage } from "next";
+import { GetServerSideProps } from 'next';
 import SortableTable from "../../components/table/SortableTable";
 import data from "../../utils/dummydata";
 
@@ -54,7 +54,7 @@ const getTopics = async() => {
   }
 }
 
-export const getStaticProps: GetStaticProps<ArticlesProps> = async (_) => {
+export const getServerSideProps: GetServerSideProps<ArticlesProps> = async (_) => {
 
   const { topics } = await getTopics();
   console.log(topics, "Testing String");

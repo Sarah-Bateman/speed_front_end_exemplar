@@ -24,7 +24,7 @@ const NewDiscussion = () => {
     }
 
     try {
-      const res = await fetch('http://mern-back-end.vercel.app/api/books', {
+      const res = await fetch('https://mern-back-end.vercel.app/api/books', {
           method: "POST",
           headers: {
               "Content-type": "application/json"

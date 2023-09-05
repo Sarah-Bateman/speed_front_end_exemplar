@@ -1,6 +1,7 @@
 import { GetServerSideProps } from 'next';
 import SortableTable from "../../components/table/SortableTable";
 import data from "../../utils/dummydata";
+import { NextPage } from 'next';
 
 interface ArticlesInterface {
   id: string;
